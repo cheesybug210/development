@@ -3,90 +3,202 @@
     "name": "Chocolate Chip Cookies",
     "description": "Four classic chocolate chip cookies",
     "price": 7.99,
-    "image": "images/anika.png"
+    "image": "images/anika.png",
+    "categories": {
+      "allergens": ["alpha", "beta"],
+      "type": "sweet"
+    },
+    "calories": 400
   },
   {
     "name": "Matcha Mille Crepe Cake",
     "description": "Layers of matcha crepe and matcha cream filling, topped with strawberries",
     "price": 4.99,
-    "image": "images/aubrey.png"
+    "image": "images/aubrey.png",
+    "categories": {
+      "allergens": [
+        "gamma",
+        "delta"
+      ],
+      "type": "sweet"
+    },
+    "calories": 500
   },
   {
     "name": "Egg Custard Bun",
     "description": "A fluffy steamed bun with a savory egg filling",
     "price": 2.99,
-    "image": "images/connie.png"
+    "image": "images/connie.png",
+    "categories": {
+      "allergens": [
+        "alpha",
+        "gamma"
+      ],
+      "type": "sweet"
+    },
+    "calories": 250
   },
   {
     "name": "Steamed Taro Buns",
     "description": "Two soft steamed buns filled with gooey purple taro filling",
     "price": 5.99,
-    "image": "images/dylan.png"
+    "image": "images/dylan.png",
+    "categories": {
+      "allergens": [
+        "beta",
+        "delta"
+      ],
+      "type": "sweet"
+    },
+    "calories": 250
   },
   {
     "name": "Chocolate Fudge Brownie",
     "description": "A rich fudge brownie drizzled with chocolate ganache",
     "price": 3.99,
-    "image": "images/isaac.png"
+    "image": "images/isaac.png",
+    "categories": {
+      "allergens": [
+        "alpha",
+        "delta"
+      ],
+      "type": "sweet"
+    },
+    "calories": 450
   },
   {
     "name": "Macarons",
     "description": "A box of three macarons in assorted flavors",
     "price": 4.99,
-    "image": "images/jeff.png"
+    "image": "images/jeff.png",
+    "categories": {
+      "allergens": [
+        "beta",
+        "gamma"
+      ],
+      "type": "sweet"
+    },
+    "calories": 400
   },
   {
     "name": "Multigrain Bread",
     "description": "A loaf of fresh-baked multigrain bread",
     "price": 4.99,
-    "image": "images/jenny.png"
+    "image": "images/jenny.png",
+    "categories": {
+      "allergens": [
+        "alpha"
+      ],
+      "type": "savory"
+    },
+    "calories": 100
   },
   {
     "name": "Croissant",
     "description": "A classic butter croissant with a flaky crust",
     "price": 2.99,
-    "image": "images/jessie.png"
+    "image": "images/jessie.png",
+    "categories": {
+      "allergens": [
+        "alpha"
+      ],
+      "type": "savory"
+    },
+    "calories": 200
   },
   {
     "name": "Toast with Butter",
     "description": "A slice of toast with a pat of butter",
     "price": 1.99,
-    "image": "images/kelly.png"
+    "image": "images/kelly.png",
+    "categories": {
+      "allergens": [
+        "alpha",
+        "beta"
+      ],
+      "type": "savory"
+    },
+    "calories": 150
   },
   {
     "name": "Tiramisu",
     "description": "A classic tiramisu with layers of coffee-soaked ladyfingers and mascarpone cream",
     "price": 3.99,
-    "image": "images/lauren.png"
+    "image": "images/lauren.png",
+    "categories": {
+      "allergens": [
+        "delta",
+        "gamma"
+      ],
+      "type": "sweet"
+    },
+    "calories": 100
   },
   {
     "name": "Egg Tart",
     "description": "A flaky pastry shell filled with a sweet egg custard",
     "price": 2.99,
-    "image": "images/melissa.png"
+    "image": "images/melissa.png",
+    "categories": {
+      "allergens": [
+        "delta"
+      ],
+      "type": "sweet"
+    },
+    "calories": 200
   },
   {
     "name": "Everything Bagel",
     "description": "A toasted bagel with sesame seeds, poppy seeds, and dried onion",
     "price": 2.99,
-    "image": "images/miku.png"
+    "image": "images/miku.png",
+    "categories": {
+      "allergens": [
+        "alpha"
+      ],
+      "type": "savory"
+    },
+    "calories": 100
   },
   {
     "name": "Gingerbread Man",
     "description": "A soft gingerbread cookie with a sweet icing glaze",
     "price": 2.99,
-    "image": "images/nick.png"
+    "image": "images/nick.png",
+    "categories": {
+      "allergens": [
+        "gamma"
+      ],
+      "type": "sweet"
+    },
+    "calories": 250
   },
   {
     "name": "Cheesecake",
     "description": "A slice of classic New York cheesecake topped with strawberry",
     "price": 3.99,
-    "image": "images/sunny.png"
+    "image": "images/sunny.png",
+    "categories": {
+      "allergens": [
+        "beta",
+        "delta"
+      ],
+      "type": "sweet"
+    },
+    "calories": 350
   },
   {
     "name": "Cream Puff",
     "description": "Light and airy pâte à choux filled with sweet whipped cream",
     "price": 2.99,
-    "image": "images/tongyu.png"
+    "image": "images/tongyu.png",
+    "categories": {
+      "allergens": [
+        "beta",
+        "gamma"
+      ],
+      "type": "sweet"
+    },
+    "calories": 250
   }
 ]
