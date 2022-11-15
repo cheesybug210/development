@@ -1,4 +1,4 @@
-// TODO: create a component that displays a single bakery item
+// TODO: add categories used by filter, fields that sort uses
 export default function BakeryItem ({ img, name, price, description, cart, onAddToCart }) {
     return (
         <div className="bakery-item">
