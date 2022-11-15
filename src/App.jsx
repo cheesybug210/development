@@ -77,7 +77,7 @@ function App () {
           ))}
         </div>
       </div>
-      <Cart cart={cart} />
+      <Cart cart={cart} setCart={setCart} addToCart={addToCart} />
     </div>
   );
 }
