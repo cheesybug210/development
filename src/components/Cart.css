@@ -25,3 +25,24 @@
     align-items: center;
     width: 40%;
 }
+
+.logo-button {
+    cursor: pointer;
+}
+
+.empty-cart-button {
+    background-color: #f9a826;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}

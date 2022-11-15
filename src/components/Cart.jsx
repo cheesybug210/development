@@ -18,22 +18,31 @@ export default function Cart ({ cart, setCart, addToCart }) {
         setCart(cart.filter(item => item.name !== name));
     };
 
+    const emptyCart = () => {
+        setCart([]);
+    };
+
     return (
         <div className="cart-items">
-            <h2>Cart</h2>
+            <div className='header-and-button'>
+                <h2>Cart</h2>
+                {
+                    cart.length > 0 && <button className='empty-cart-button' onClick={emptyCart}>Empty cart</button>
+                }
+            </div>
             {cart.map(item =>
                 <div className="cart-item">
                     <p>{`${item.quantity}x ${item.name}`}</p>
                     <div className='item-right'>
                         {/* <div> */}
 
-                        <div onClick={() => removeItem(item.name)}>
+                        <div className='logo-button' onClick={() => removeItem(item.name)}>
                             <DeleteOutline />
                         </div>
-                        <div onClick={() => reduceItemQuantity(item.name)}>
+                        <div className='logo-button' onClick={() => reduceItemQuantity(item.name)}>
                             <RemoveCircleOutline />
                         </div>
-                        <div onClick={() => addToCart(item.name, item.price)}>
+                        <div className='logo-button' onClick={() => addToCart(item.name, item.price)}>
                             <AddCircleOutline />
                         </div>
                         {/* </div> */}
