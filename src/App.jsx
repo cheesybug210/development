@@ -38,8 +38,6 @@ function App () {
       return item.categories.allergens.some(allergen => allergens.includes(allergen));
     });
 
-  console.log(type);
-
 
   const sortedBakeryData = filteredBakeryData.sort((a, b) => {
     if (sort === "price") {
@@ -52,7 +50,7 @@ function App () {
 
   return (
     <div className="App">
-      <h1>By Makery</h1>
+      <h1 className="title">Gaked Boods</h1>
       <div className="main-content">
         <FilterBar
           sort={sort}
@@ -63,7 +61,7 @@ function App () {
           setAllergens={setAllergens}
         />
         <div className="bakery-items">
-          {sortedBakeryData.map((item, index) => (
+          {sortedBakeryData.map(item => (
             <BakeryItem
               img={item.image}
               name={item.name}

@@ -19,6 +19,12 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
         }
     };
 
+    const resetFilters = () => {
+        setSort("price");
+        setType([]);
+        setAllergens([]);
+    };
+
     return (
         <div className="form-container">
             <FormControl>
@@ -36,20 +42,21 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
 
                 <FormGroup>
                     <FormLabel id="demo-checkbox-group-label">Type</FormLabel>
-                    <FormControlLabel control={<Checkbox onChange={e => updateType("sweet", e.target.checked)} />} label="Sweet" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateType("savory", e.target.checked)} />} label="Savory" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateType("sweet", e.target.checked)} checked={type.includes("sweet")} />} label="Sweet" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateType("savory", e.target.checked)} checked={type.includes("savory")} />} label="Savory" />
                 </FormGroup>
 
                 <FormGroup>
                     <FormLabel id="demo-checkbox-group-label">Allergens</FormLabel>
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("alpha", e.target.checked)} />} label="alpha" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("beta", e.target.checked)} />} label="beta" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("gamma", e.target.checked)} />} label="gamma" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("delta", e.target.checked)} />} label="delta" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("alpha", e.target.checked)} checked={allergens.includes("alpha")} />} label="alpha" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("beta", e.target.checked)} checked={allergens.includes("beta")} />} label="beta" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("gamma", e.target.checked)} checked={allergens.includes("gamma")} />} label="gamma" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("delta", e.target.checked)} checked={allergens.includes("delta")} />} label="delta" />
                 </FormGroup>
 
 
             </FormControl>
+            <button className="reset-filters-button" onClick={resetFilters}>Reset filters</button>
         </div>
     );
 }

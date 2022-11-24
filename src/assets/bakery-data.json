@@ -3,7 +3,7 @@
     "name": "Chocolate Chip Cookies",
     "description": "Four classic chocolate chip cookies",
     "price": 7.99,
-    "image": "images/anika.png",
+    "image": "images/cookies.jpg",
     "categories": {
       "allergens": ["alpha", "beta"],
       "type": "sweet"
@@ -11,10 +11,10 @@
     "calories": 400
   },
   {
-    "name": "Matcha Mille Crepe Cake",
-    "description": "Layers of matcha crepe and matcha cream filling, topped with strawberries",
+    "name": "Cannoli",
+    "description": "Fried pastry dough stuffed with a sweet, creamy cheese filling",
     "price": 4.99,
-    "image": "images/aubrey.png",
+    "image": "images/cannoli.jpg",
     "categories": {
       "allergens": [
         "gamma",
@@ -25,10 +25,10 @@
     "calories": 500
   },
   {
-    "name": "Egg Custard Bun",
-    "description": "A fluffy steamed bun with a savory egg filling",
+    "name": "Apple Pie",
+    "description": "A delicious slice of apple pie",
     "price": 2.99,
-    "image": "images/connie.png",
+    "image": "images/apple-pie.jpg",
     "categories": {
       "allergens": [
         "alpha",
@@ -39,10 +39,10 @@
     "calories": 250
   },
   {
-    "name": "Steamed Taro Buns",
-    "description": "Two soft steamed buns filled with gooey purple taro filling",
+    "name": "Meringue-Topped Pecan Custard Pie",
+    "description": "A slice of pecan-flavoured custard pie, topped with meringue ",
     "price": 5.99,
-    "image": "images/dylan.png",
+    "image": "images/custard-pie.jpg",
     "categories": {
       "allergens": [
         "beta",
@@ -53,10 +53,10 @@
     "calories": 250
   },
   {
-    "name": "Chocolate Fudge Brownie",
-    "description": "A rich fudge brownie drizzled with chocolate ganache",
+    "name": "Fudge Nut Brownies",
+    "description": "A rich fudge brownie sprinkled with walnuts",
     "price": 3.99,
-    "image": "images/isaac.png",
+    "image": "images/brownie.jpg",
     "categories": {
       "allergens": [
         "alpha",
@@ -70,7 +70,7 @@
     "name": "Macarons",
     "description": "A box of three macarons in assorted flavors",
     "price": 4.99,
-    "image": "images/jeff.png",
+    "image": "images/macarons.jpg",
     "categories": {
       "allergens": [
         "beta",
@@ -81,10 +81,10 @@
     "calories": 400
   },
   {
-    "name": "Multigrain Bread",
-    "description": "A loaf of fresh-baked multigrain bread",
+    "name": "Cheesy Samosa Puffs",
+    "description": "A modern, cheesy take on an Indian classic",
     "price": 4.99,
-    "image": "images/jenny.png",
+    "image": "images/samosa.webp",
     "categories": {
       "allergens": [
         "alpha"
@@ -94,10 +94,10 @@
     "calories": 100
   },
   {
-    "name": "Croissant",
-    "description": "A classic butter croissant with a flaky crust",
+    "name": "Sausage Rolls",
+    "description": "Six pieces of pork sausage, wrapped in extra-flaky dough",
     "price": 2.99,
-    "image": "images/jessie.png",
+    "image": "images/sausage-rolls.jpg",
     "categories": {
       "allergens": [
         "alpha"
@@ -107,10 +107,10 @@
     "calories": 200
   },
   {
-    "name": "Toast with Butter",
-    "description": "A slice of toast with a pat of butter",
+    "name": "Soft Pretzel Knots",
+    "description": "Six small pieces of soft pretzel knots, served with a side of mustard",
     "price": 1.99,
-    "image": "images/kelly.png",
+    "image": "images/pretzel.jpg",
     "categories": {
       "allergens": [
         "alpha",
@@ -121,10 +121,10 @@
     "calories": 150
   },
   {
-    "name": "Tiramisu",
-    "description": "A classic tiramisu with layers of coffee-soaked ladyfingers and mascarpone cream",
+    "name": "Iced Orange Cookies",
+    "description": "Six small vanilla cookies with orange icing",
     "price": 3.99,
-    "image": "images/lauren.png",
+    "image": "images/orange-cookies.jpg",
     "categories": {
       "allergens": [
         "delta",
@@ -135,10 +135,10 @@
     "calories": 300
   },
   {
-    "name": "Egg Tart",
-    "description": "A flaky pastry shell filled with a sweet egg custard",
+    "name": "Chocolate Chess Pie",
+    "description": "A slice of a southern classic with a chocolate filling and a flaky, buttery crust",
     "price": 2.99,
-    "image": "images/melissa.png",
+    "image": "images/chocolate-chess-pie.jpg",
     "categories": {
       "allergens": [
         "delta"
@@ -148,10 +148,10 @@
     "calories": 200
   },
   {
-    "name": "Everything Bagel",
-    "description": "A toasted bagel with sesame seeds, poppy seeds, and dried onion",
+    "name": "Cheddar and Sage Scones",
+    "description": "A British classic, made with cheddar and sage",
     "price": 2.99,
-    "image": "images/miku.png",
+    "image": "images/scones.webp",
     "categories": {
       "allergens": [
         "alpha"
@@ -161,23 +161,23 @@
     "calories": 100
   },
   {
-    "name": "Gingerbread Man",
-    "description": "A soft gingerbread cookie with a sweet icing glaze",
+    "name": "Tomato Tarts",
+    "description": "A cheesy tart with halves of cherry tomatoes",
     "price": 2.99,
-    "image": "images/nick.png",
+    "image": "images/tomato-tarts.webp",
     "categories": {
       "allergens": [
         "gamma"
       ],
-      "type": "sweet"
+      "type": "savory"
     },
     "calories": 250
   },
   {
     "name": "Cheesecake",
-    "description": "A slice of classic New York cheesecake topped with strawberry",
+    "description": "A slice of classic New York cheesecake with whipped cream and a strawberry",
     "price": 3.99,
-    "image": "images/sunny.png",
+    "image": "images/cheesecake.jpg",
     "categories": {
       "allergens": [
         "beta",
@@ -188,10 +188,10 @@
     "calories": 350
   },
   {
-    "name": "Cream Puff",
-    "description": "Light and airy pâte à choux filled with sweet whipped cream",
+    "name": "Flourless Chocolate Cake",
+    "description": "A slice of our decadent flourless chocolate cake, served with raspberries",
     "price": 2.99,
-    "image": "images/tongyu.png",
+    "image": "images/chocolate-cake.jpg",
     "categories": {
       "allergens": [
         "beta",
