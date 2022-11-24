@@ -27,12 +27,12 @@
 }
 
 .App {
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .main-content {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
     margin: 2rem auto;
 }
@@ -40,6 +40,10 @@
 .title {
     font-size: 2rem;
     color: #000;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     text-align: center;
+}
+
+.aligned-items {
+    width: 55rem;
 }

@@ -16,7 +16,7 @@ function App () {
   const [cart, setCart] = useState([]);
 
   const [sort, setSort] = useState("price");
-  const [type, setType] = useState([]);
+  const [type, setType] = useState("all");
   const [allergens, setAllergens] = useState([]);
 
   const addToCart = (name, price) => {
@@ -30,12 +30,12 @@ function App () {
   };
 
   const filteredBakeryData = bakeryData.filter(item => {
-    if (type.length === 0) return true;
-    return type.includes(item.categories.type);
+    if (type === "all") return true;
+    return type === item.categories.type;
   })
     .filter(item => {
       if (allergens.length === 0) return true;
-      return item.categories.allergens.some(allergen => allergens.includes(allergen));
+      return allergens.every(allergen => item.categories.allergens.includes(allergen));
     });
 
 

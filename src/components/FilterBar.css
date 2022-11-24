@@ -20,6 +20,9 @@
     padding: 0.5rem 1rem;
     border-radius: 10px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
 }
 
 .reset-filters-button {

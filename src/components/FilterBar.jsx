@@ -3,13 +3,13 @@ import { FormControl, FormLabel, RadioGroup, FormControlLabel, Radio, FormGroup,
 
 export default function FilterBar ({ sort, setSort, type, setType, allergens, setAllergens }) {
 
-    const updateType = (label, checked) => {
-        if (checked) {
-            setType([...type, label]);
-        } else {
-            setType(type.filter(item => item !== label));
-        }
-    };
+    // const updateType = (label, checked) => {
+    //     if (checked) {
+    //         setType([...type, label]);
+    //     } else {
+    //         setType(type.filter(item => item !== label));
+    //     }
+    // };
 
     const updateAllergens = (label, checked) => {
         if (checked) {
@@ -21,7 +21,7 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
 
     const resetFilters = () => {
         setSort("price");
-        setType([]);
+        setType("all");
         setAllergens([]);
     };
 
@@ -39,12 +39,24 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
                     <FormControlLabel value="calories" control={<Radio />} label="Calories" />
                 </RadioGroup>
 
+                <FormLabel id="demo-radio-buttons-group-label">Type</FormLabel>
+                <RadioGroup
+                    aria-labelledby="demo-radio-buttons-group-label"
+                    value={type}
+                    onChange={(e) => setType(e.target.value)}
+                    name="radio-buttons-group"
+                >
+                    <FormControlLabel value="all" control={<Radio />} label="All" />
+                    <FormControlLabel value="sweet" control={<Radio />} label="Sweet" />
+                    <FormControlLabel value="savory" control={<Radio />} label="Savory" />
+                </RadioGroup>
 
-                <FormGroup>
+
+                {/* <FormGroup>
                     <FormLabel id="demo-checkbox-group-label">Type</FormLabel>
                     <FormControlLabel control={<Checkbox onChange={e => updateType("sweet", e.target.checked)} checked={type.includes("sweet")} />} label="Sweet" />
                     <FormControlLabel control={<Checkbox onChange={e => updateType("savory", e.target.checked)} checked={type.includes("savory")} />} label="Savory" />
-                </FormGroup>
+                </FormGroup> */}
 
                 <FormGroup>
                     <FormLabel id="demo-checkbox-group-label">Allergens</FormLabel>
@@ -53,8 +65,6 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
                     <FormControlLabel control={<Checkbox onChange={e => updateAllergens("nut-free", e.target.checked)} checked={allergens.includes("nut-free")} />} label="Nut-free" />
                     <FormControlLabel control={<Checkbox onChange={e => updateAllergens("eggless", e.target.checked)} checked={allergens.includes("eggless")} />} label="Eggless" />
                 </FormGroup>
-
-
             </FormControl>
             <button className="reset-filters-button" onClick={resetFilters}>Reset filters</button>
         </div>
