@@ -50,7 +50,7 @@ function App () {
 
   return (
     <div className="App">
-      <h1 className="title">Gaked Boods</h1>
+      <h1 className="title">Goods That Are Baked</h1>
       <div className="main-content">
         <FilterBar
           sort={sort}
@@ -60,22 +60,24 @@ function App () {
           allergens={allergens}
           setAllergens={setAllergens}
         />
-        <div className="bakery-items">
-          {sortedBakeryData.map(item => (
-            <BakeryItem
-              img={item.image}
-              name={item.name}
-              price={item.price}
-              description={item.description}
-              type={item.categories.type}
-              allergens={item.categories.allergens}
-              calories={item.calories}
-              onAddToCart={addToCart}
-            />
-          ))}
+        <div className="aligned-items">
+          <div className="bakery-items">
+            {sortedBakeryData.map(item => (
+              <BakeryItem
+                img={item.image}
+                name={item.name}
+                price={item.price}
+                description={item.description}
+                type={item.categories.type}
+                allergens={item.categories.allergens}
+                calories={item.calories}
+                onAddToCart={addToCart}
+              />
+            ))}
+          </div>
+          <Cart cart={cart} setCart={setCart} addToCart={addToCart} />
         </div>
       </div>
-      <Cart cart={cart} setCart={setCart} addToCart={addToCart} />
     </div>
   );
 }

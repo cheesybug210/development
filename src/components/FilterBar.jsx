@@ -48,10 +48,10 @@ export default function FilterBar ({ sort, setSort, type, setType, allergens, se
 
                 <FormGroup>
                     <FormLabel id="demo-checkbox-group-label">Allergens</FormLabel>
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("alpha", e.target.checked)} checked={allergens.includes("alpha")} />} label="alpha" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("beta", e.target.checked)} checked={allergens.includes("beta")} />} label="beta" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("gamma", e.target.checked)} checked={allergens.includes("gamma")} />} label="gamma" />
-                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("delta", e.target.checked)} checked={allergens.includes("delta")} />} label="delta" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("dairy-free", e.target.checked)} checked={allergens.includes("dairy-free")} />} label="Dairy-free" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("gluten-free", e.target.checked)} checked={allergens.includes("gluten-free")} />} label="Gluten-free" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("nut-free", e.target.checked)} checked={allergens.includes("nut-free")} />} label="Nut-free" />
+                    <FormControlLabel control={<Checkbox onChange={e => updateAllergens("eggless", e.target.checked)} checked={allergens.includes("eggless")} />} label="Eggless" />
                 </FormGroup>
 
 

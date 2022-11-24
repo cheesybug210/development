@@ -5,7 +5,7 @@
     "price": 7.99,
     "image": "images/cookies.jpg",
     "categories": {
-      "allergens": ["alpha", "beta"],
+      "allergens": ["nut-free"],
       "type": "sweet"
     },
     "calories": 400
@@ -17,8 +17,8 @@
     "image": "images/cannoli.jpg",
     "categories": {
       "allergens": [
-        "gamma",
-        "delta"
+        "nut-free",
+        "eggless"
       ],
       "type": "sweet"
     },
@@ -31,8 +31,8 @@
     "image": "images/apple-pie.jpg",
     "categories": {
       "allergens": [
-        "alpha",
-        "gamma"
+        "dairy-free",
+        "nut-free"
       ],
       "type": "sweet"
     },
@@ -45,8 +45,7 @@
     "image": "images/custard-pie.jpg",
     "categories": {
       "allergens": [
-        "beta",
-        "delta"
+        "dairy-free"
       ],
       "type": "sweet"
     },
@@ -59,8 +58,7 @@
     "image": "images/brownie.jpg",
     "categories": {
       "allergens": [
-        "alpha",
-        "delta"
+        "eggless"
       ],
       "type": "sweet"
     },
@@ -73,8 +71,8 @@
     "image": "images/macarons.jpg",
     "categories": {
       "allergens": [
-        "beta",
-        "gamma"
+        "dairy-free",
+        "nut-free"
       ],
       "type": "sweet"
     },
@@ -87,7 +85,8 @@
     "image": "images/samosa.webp",
     "categories": {
       "allergens": [
-        "alpha"
+        "nut-free",
+        "eggless"
       ],
       "type": "savory"
     },
@@ -100,7 +99,8 @@
     "image": "images/sausage-rolls.jpg",
     "categories": {
       "allergens": [
-        "alpha"
+        "dairy-free",
+        "nut-free"
       ],
       "type": "savory"
     },
@@ -113,8 +113,8 @@
     "image": "images/pretzel.jpg",
     "categories": {
       "allergens": [
-        "alpha",
-        "beta"
+        "dairy-free",
+        "nut-free"
       ],
       "type": "savory"
     },
@@ -127,8 +127,8 @@
     "image": "images/orange-cookies.jpg",
     "categories": {
       "allergens": [
-        "delta",
-        "gamma"
+        "eggless",
+        "nut-free"
       ],
       "type": "sweet"
     },
@@ -141,7 +141,7 @@
     "image": "images/chocolate-chess-pie.jpg",
     "categories": {
       "allergens": [
-        "delta"
+        "nut-free"
       ],
       "type": "sweet"
     },
@@ -154,7 +154,8 @@
     "image": "images/scones.webp",
     "categories": {
       "allergens": [
-        "alpha"
+        "nut-free",
+        "eggless"
       ],
       "type": "savory"
     },
@@ -167,7 +168,8 @@
     "image": "images/tomato-tarts.webp",
     "categories": {
       "allergens": [
-        "gamma"
+        "nut-free",
+        "eggless"
       ],
       "type": "savory"
     },
@@ -180,8 +182,7 @@
     "image": "images/cheesecake.jpg",
     "categories": {
       "allergens": [
-        "beta",
-        "delta"
+        "nut-free"
       ],
       "type": "sweet"
     },
@@ -194,8 +195,8 @@
     "image": "images/chocolate-cake.jpg",
     "categories": {
       "allergens": [
-        "beta",
-        "gamma"
+        "gluten-free",
+        "nut-free"
       ],
       "type": "sweet"
     },

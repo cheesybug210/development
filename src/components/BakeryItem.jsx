@@ -1,6 +1,5 @@
 import "./BakeryItem.css";
 
-// TODO: add categories used by filter, fields that sort uses
 export default function BakeryItem ({ img, name, price, description, type, allergens, calories, onAddToCart }) {
     return (
         <div className="bakery-item">
@@ -9,7 +8,7 @@ export default function BakeryItem ({ img, name, price, description, type, aller
                 <h3>{name}</h3>
                 <div className="item-category-info">
                     <p>{`Type: ${type}`}</p>
-                    <p>{`Allergens: ${allergens.join(", ")}`}</p>
+                    <p>{`Allergen info: ${allergens.join(", ")}`}</p>
                     <p>{`Calories: ${calories}`}</p>
                 </div>
                 <p className="bakery-item-description">{description}</p>

@@ -1,7 +1,6 @@
 import './Cart.css';
 import { RemoveCircleOutline, DeleteOutline, AddCircleOutline } from '@mui/icons-material';
 
-
 export default function Cart ({ cart, setCart, addToCart }) {
 
     const reduceItemQuantity = (name) => {

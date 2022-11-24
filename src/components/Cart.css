@@ -47,15 +47,6 @@
     width: 40%;
 }
 
-/* .cart-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 2rem auto;
-} */
-
 .cart-items {
     background-color: #d3d3d34a;
     padding: 1rem;
@@ -64,5 +55,6 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     width: 35rem;
-    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
