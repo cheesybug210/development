@@ -12,7 +12,7 @@ export default function BakeryItem ({ img, name, price, description, type, aller
                     <p>{`Allergens: ${allergens.join(", ")}`}</p>
                     <p>{`Calories: ${calories}`}</p>
                 </div>
-                <p>{description}</p>
+                <p className="bakery-item-description">{description}</p>
             </div>
             <div className="bottom-bar">
                 <p>{`$${price}`}</p>
